@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="head">
+        <h1>Budget Calculator</h1>
+    </div>
+<div class="wrapper">
+    <div class="container">
+        <div class="sub-container">
+            <!-- Budget -->
+<div class="total-amount-container">
+    <h3>Budget</h3>
+    <p class="hide error" id="budget-error">Value cannot be empty or negative </p>
+    <input type="number" id="totalamount" placeholder="Enter Total Amount">
+    <button class="submit" id="total-amount-button" onclick="income()">Set Budget</button>
+
+</div>
+
+<!-- Expenditure -->
+<div class="user-amount-container">
+    <h3>Expenses</h3>
+    <p class="hide error" id="product-title-error">Value cannot be empty</p>
+    <input type="text" class="product-title" id="producttitle" placeholder="Enter your product">
+    <input type="number" id="useramount" placeholder="Enter cost of product">
+    <button class="submit" id="check-amount" onclick="expense()">Add Expense</button>
+</div>
+</div>
+
+<!-- Output -->
+<div class="output-container flex-space" >
+    <div>
+        <strong><p>Total Budget</p></strong>
+        <span id="amount">0</span>
+    </div>
+    <div>
+        <strong><p>Expenses</p></strong>
+        <span id="expenditurevalue">0</span>
+    </div>
+    <div>
+       <strong><p>Balance</p></strong> 
+        <span id="balanceamount">0</span>
+    </div>
+
+</div>
+    </div>
+    <!-- List -->
+
+    <!-- <div class="list-container" >
+        <strong><h3>Expense List</h3></strong>
+        <table>
+            <thead>
+                <th class="border border-3 border-light  px-5">Expense</th>
+                <th class="border border-3 border-info px-5">Amount</th>
+            </thead>
+            <tbody id="list">
+
+            </tbody>
+        </table>
+</div> -->
+</div>
+
+<div >
+<button onclick="clearAll()" id="clearall">Clear All</button>
+</div>
+
+<!-- script -->
+
+</body>
+<Script src="./script.js"></Script>
+
+</html>

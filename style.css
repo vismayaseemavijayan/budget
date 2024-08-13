@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    /* background-color: white; */
+    background-image: url('https://assets.ey.com/content/dam/ey-sites/ey-com/en_in/webcast/2022/02/ey-financial-growth-with-indian-rupee.jpg');
+    content: '';
+    position:absolute;
+    background-size:cover;
+}
+.head h1{
+    text-align: center;
+    margin-left: 600px;
+    margin-top: 20px;
+    color: white;
+    font-size: 45px;
+}
+.wrapper{
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+.container{
+    width: 100%;
+}
+.sub-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;                                                        
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper h3{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+
+}
+.container input{
+    display: block;
+    width: 87%;
+    padding: 0.6em 0.3em;
+    border: 1px solid #d0d0d0;
+    color: #565d83;
+    outline: none;
+    font-weight: 400;
+    margin: 24px;
+
+}
+.container input:focus{
+    border-color: violet;
+}
+.total-amount-container,
+.user-amount-container{
+    background-color: #44647547;
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em black;
+    margin-top: 30px;
+    width: 415px;
+    margin-left: 120px;
+}
+.output-container{
+    background-color: #003b56c2;
+    color: white;
+    border-radius: 0.3em;
+    margin-top: 20px;
+    box-shadow: 0 0.6em 1.2em rgba(28,0,80,0.06);
+    font-weight: 500;
+    margin: 2em 0;
+    padding: 1.2em;
+    width: 880px;
+    margin-left: 170px;
+}
+.output-container p{
+    font-weight: 500;
+    margin-bottom: 0.6em;
+
+}
+.output-container span{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+
+}
+.submit{
+    font-size: 1em;
+    margin-top: 1em;
+    background-color: #0c0ffd96;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin-left: 120px;
+}
+.list{
+     color: white;
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28,0,80,0.06);
+    border-radius: 0.6em;
+    display: flex;
+    flex-direction: column;
+
+}
+.hide{
+    display: none;
+}
+.error{
+    color: red;
+}
+#clearall{
+    font-size: 1em;
+    margin-top: 1em;
+    background-color: #0c0ffd96;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin-left: 725px
+}
+.list-container{
+    color: white;
+}
+@media only screen and (min-width:300px) and (max-width:1024px){
+
+}
